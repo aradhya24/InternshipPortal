@@ -1,0 +1,167 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Online Courses & Summer Training-SIES.Trainings</title>
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            
+                 
+            }
+            .header{
+                min-height: 100vh;
+                width: 100%;
+                background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://siesgst.edu.in/images/banner1.jpg	);
+                background-position: center;
+                background-size: cover;
+                position: relative;
+        
+        }
+      
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width: 90px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+    
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 62px;
+
+        }
+        .text-box p{
+            margin: 10px 0 40px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+
+        }
+        .hero-btn:hover{
+        border:1px solid #f44336;
+        background: #f44336;
+        transition: 0.1s;
+        }
+        nav.fa{
+            display: none;
+        }
+        @media(max-width:700px){
+            .text-box h1{
+                font-size: 20px;
+            }
+            .nav-links ul li{
+                display: block;
+            }
+            .nav-links{
+                position: absolute;
+                background-color: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: -200px;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+            }
+            nav .fa{
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            
+            
+        }
+        img{
+              height: 90px;
+              width:250px;
+              border-radius:5%
+
+            }
+        
+        
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+               
+                <div class="nav-links" id="navLinks">
+                    <!-- <i class="fa fa-times" onclick="hideMenu()" ></i> -->
+                   
+                </div>
+                <!-- <i class="fa fa-bars"onclick="showMenu()"></i>// -->
+            </nav>
+            <div class="text-box" >
+                <div class="logo">
+                  <img src="https://siesgst.edu.in/images/sies_gst_logo.jpg" alt="" ><br><br>
+                                  </div>
+                <h1>SIES INTERNSHIP PORTAL </h1>
+               <br>
+                <a href="admin"class="hero-btn">ADMIN</a>
+                <a href="user"class="hero-btn">USER</a>
+                
+            </div>
+
+       
+       
+    </body>
+</html>
